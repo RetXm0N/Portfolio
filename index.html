@@ -17,7 +17,7 @@
       <span class="sr-only">메뉴 열기</span><span></span><span></span>
     </button>
     <nav class="primary-nav" id="primary-nav" aria-label="주요 메뉴">
-      <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#about">About</a>
     </nav>
   </header>
 
@@ -32,7 +32,7 @@
     </section>
 
     <section class="section shell" id="work" aria-label="Work">
-      <div class="work-divider" data-reveal aria-hidden="true"></div>
+      <div class="work-divider" aria-hidden="true"></div>
       <div class="project-grid">
         <a class="project-card" href="tuk-tak-tok.html" data-reveal>
           <div class="project-card__media"><img src="Source/3.webp" alt="TUK, TAK, TOK 몰입형 전시 공간" loading="lazy" /></div>
@@ -49,26 +49,44 @@
       </div>
     </section>
 
-    <section class="section section--muted" id="about" aria-labelledby="about-title">
-      <div class="shell about-grid">
-        <div class="about-intro" data-reveal><p class="eyebrow">About</p><h2 id="about-title">익숙한 세계를<br />새롭게 감각하는 방법</h2></div>
-        <div class="about-copy" data-reveal>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="shell about-layout">
+        <header class="about-profile" data-reveal>
+          <h2 id="about-title">Yun Won Hyeong</h2>
+          <time datetime="2002-04-17">2002.04.17.</time>
+        </header>
+
+        <div class="about-statement" data-reveal>
+          <p>창의적인 융합을 지향하는 디자이너 윤원형입니다.</p>
           <p>새로운 아이디어를 다양한 기술과 디자인으로 구현하여 특별한 경험을 선사합니다.</p>
-          <p>일상 속에서의 감각과 관계를 새롭게 바라보며, 관객이 직접 경험하고 해석할 수 있는 작업을 추구하고 디자인을 통해 익숙한 세계를 낯설게 감각하고 새로운 질문을 발견할 수 있는 계기를 만들고자 합니다.</p>
+          <p>일상 속에서의 감각과 관계를 새롭게 바라보며, 관객이 직접 경험하고 해석할 수 있는 작업을 추구하고<br class="about-statement__break" /> 디자인을 통해 익숙한 세계를 낯설게 감각하고 새로운 질문을 발견할 수 있는 계기를 만들고자 합니다.</p>
         </div>
-      </div>
-      <div class="shell info-grid">
-        <section class="info-block" data-reveal>
-          <h3>Education</h3>
-          <ul class="plain-list"><li><span>2018–2020</span> 제주제일고등학교</li><li><span>2021–2026</span> 대구예술대학교 Art&amp;Innovation 전공</li></ul>
-        </section>
-        <section class="info-block info-block--wide" data-reveal>
-          <h3>Achievement</h3>
-          <ul class="plain-list">
-            <li><span>2026.09.</span> 아트&amp;이노베이션 展_새로고침을 너무 많이 눌렀나 봐_대구행복북구문화재단 어울아트센터</li>
-            <li><span>2026.12.</span> 대구아트스퀘어 展_Daegu Art Odyssdey 2026_대구문화예술회관<br />VR 인터랙티브 아트 전시 예정</li>
-          </ul>
-        </section>
+
+        <div class="about-facts">
+          <section class="about-block" data-reveal>
+            <h3>Education</h3>
+            <ul class="about-list about-list--education">
+              <li><strong>2018–2020</strong><span>제주제일고등학교</span></li>
+              <li><strong>2021–2026</strong><span>대구예술대학교<br />Art&amp;Innovation 전공</span></li>
+            </ul>
+          </section>
+          <section class="about-block about-block--achievement" data-reveal>
+            <h3>Achievement</h3>
+            <ul class="about-list">
+              <li><strong>2026.09.</strong><span>아트&amp;이노베이션 展_새로고침을 너무 많이 눌렀나 봐_대구행복북구문화재단 어울아트센터</span></li>
+              <li><strong>2026.12.</strong><span>대구아트스퀘어 展_Daegu Art Odyssdey 2026_대구문화예술회관<br />VR 인터랙티브 아트 전시 예정</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="about-bottom">
+          <section class="about-block about-skills" data-reveal>
+            <h3>Skill</h3>
+            <svg class="about-skills__icons" viewBox="140 2310 760 830" role="img" aria-label="사용 프로그램 아이콘">
+              <image href="Source/1투명.webp" width="5834" height="3750" />
+            </svg>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -83,12 +101,6 @@
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="shell" data-reveal>
-        <p class="eyebrow">Contact</p><h2 id="contact-title">함께 새로운 경험을<br />만들어 봅시다.</h2>
-        <div class="contact-links"><a href="mailto:zdcxs5678@naver.com">zdcxs5678@naver.com</a><a href="tel:+821055416770">+82) 010-5541-6770</a></div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer shell"><p>© 2026 Yun Won Hyeong</p><a href="#main">Back to top ↑</a></footer>
