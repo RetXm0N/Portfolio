@@ -1,0 +1,197 @@
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+  overflow-anchor: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #050100;
+}
+
+.page {
+  width: 75%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.portfolio-image,
+.portfolio-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-video {
+  background: #000;
+}
+
+/* Only images with a confirmed bright source edge receive this crop. */
+.trim-right-edge {
+  clip-path: inset(0 1px 0 0);
+}
+
+.embed-area:has(.embed-slot:empty) {
+  display: none;
+}
+
+.embed-slot iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+/* The opening alone fills the viewport; the remaining pages stay continuous. */
+#intro {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+
+#intro .intro-visual {
+  width: 75vw;
+  height: 100%;
+  min-height: 0;
+  position: relative;
+  transform: translateZ(0) scale(var(--opening-scale, 1.25));
+  backface-visibility: hidden;
+  transform-origin: center;
+  will-change: transform;
+}
+#intro .opening-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+#opening-neon {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+}
+
+/* One-piece meerkat cursor, two-thirds of its previous size. */
+#meerkat-cursor {
+  position:fixed;left:0;top:0;width:22.667px;height:48.967px;
+  pointer-events:none;z-index:2147483647;visibility:hidden;
+  will-change:transform;contain:layout style;
+}
+#meerkat-cursor.is-visible {visibility:visible}
+#meerkat-cursor .meerkat-pose {
+  width:100%;height:100%;transform-origin:50% 50%;
+  
+}
+#meerkat-cursor .meerkat-facing {width:100%;height:100%;transform-origin:50% 50%}
+#meerkat-cursor .meerkat-part {position:absolute;inset:0;pointer-events:none}
+#meerkat-cursor .meerkat-part img {
+  position:absolute;max-width:none;width:34.967px;height:50.407px;
+  left:-6.453px;top:-.707px;pointer-events:none;user-select:none;
+}
+@media (any-hover:hover) and (any-pointer:fine) {
+  html.meerkat-cursor-active,html.meerkat-cursor-active * {cursor:none!important}
+}
+@media (prefers-reduced-motion:reduce) {
+  #meerkat-cursor .meerkat-pose {transition:none}
+}
+
+/* Replace the native scrollbar with a thin reading-progress line. */
+html {scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar {display:none;width:0;height:0}
+#scroll-progress {
+  position:fixed;top:0;right:3px;bottom:0;width:1px;
+  background:#fff;transform:scaleY(0);transform-origin:top;
+  pointer-events:none;z-index:2147483646;
+}
+
+/* Keep image cropping separate from the animated compositing surface. */
+:is(#page-1,#page-2,#page-11,#page-17,#page-23) {
+  width:100%;height:100vh;height:100svh;
+  display:grid;place-items:center;overflow:hidden;
+  contain:paint;isolation:isolate;
+}
+.chapter-visual {
+  width:75%;height:100%;min-height:0;
+  transform:translateZ(0) scale(var(--page-scale,1));
+  transform-origin:center;will-change:transform;
+  backface-visibility:hidden;
+}
+.chapter-visual .portfolio-image {
+  width:100%;height:100%;object-fit:contain;
+}
+.portfolio-video {
+  aspect-ratio:16 / 9;
+}
+
+/* Four movable cutouts are clipped to the full first-page viewport. */
+#page-1 {position:relative;background:#040000}
+#page-1 .chapter-visual {position:relative;z-index:2;pointer-events:none}
+#page-1 .page-one-objects {position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+#page-1 .page-one-objects img {position:absolute;left:0;top:0;max-width:none;pointer-events:none;user-select:none;will-change:transform;transform-origin:center}
+
+/* Page 9 installation photos keep their original slant and final positions. */
+#page-9 .interaction-stage { position: relative; overflow: hidden; }
+#page-9 .interaction-photo-pair {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  will-change: transform;
+}
+#page-9 .interaction-photo {
+  display: block;
+  position: absolute;
+  height: auto;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+}
+#page-9 .interaction-photo-first {
+  left: 0;
+  top: 24.88%;
+  width: 54.8%;
+  z-index: 1;
+}
+#page-9 .interaction-photo-second {
+  left: 53.21%;
+  top: 38.75%;
+  width: 46.79%;
+  z-index: 2;
+}
+
+/* Page 10: the upper strip comes from the right, the lower from the left. */
+#page-10 .interaction-stage { position: relative; overflow: hidden; }
+#page-10 .interaction-photo {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}
+#page-10 .interaction-photo-upper { top: 12.3%; z-index: 2; }
+#page-10 .interaction-photo-lower {
+  top: 63.79%;
+  z-index: 1;
+  /* Hide the blue edge copied from the overlapping upper photograph. */
+  clip-path: polygon(0 1.7%, 78% 1.7%, 100% 13%, 100% 100%, 0 100%);
+}

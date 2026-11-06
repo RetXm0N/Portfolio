@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAHWA | PORTFOLIO</title>
+  <link rel="stylesheet" href="style.css?v=optical-refraction-off" />
+  <link rel="stylesheet" href="menu.css?v=7" />
+  <link rel="preload" href="Video/Opening_Poster.jpg" as="image" fetchpriority="high" />
+</head>
+<body>
+  <nav class="site-menu" id="site-menu" aria-label="Portfolio menu">
+    <button class="site-menu-toggle" type="button" aria-label="Open menu" aria-controls="site-menu-items" aria-expanded="false"><img src="Menu/menu-icon.webp" alt="" width="97" height="71" /></button>
+    <div class="site-menu-items" id="site-menu-items" aria-hidden="true">
+      <button class="site-menu-work" type="button" aria-label="Work" aria-controls="site-menu-work-list" aria-expanded="false" tabindex="-1"><img src="Menu/menu-work.webp" alt="" width="251" height="76" /></button>
+      <button class="site-menu-connect" type="button" aria-label="Connect" tabindex="-1"><img src="Menu/menu-connect.webp" alt="" width="403" height="76" /></button>
+    </div>
+    <div class="site-menu-work-list" id="site-menu-work-list" aria-hidden="true">
+      <button class="site-menu-line" type="button" aria-label="TUK, TAK, TOK" tabindex="-1"><img src="Menu/menu-tuk-tak-tok-corrected.webp" alt="" width="710" height="96" /></button>
+      <button class="site-menu-line" type="button" aria-label="Tarot Card" tabindex="-1"><img src="Menu/menu-tarot-card.webp" alt="" width="498" height="76" /></button>
+      <button class="site-menu-line" type="button" aria-label="Tarot Card with AI" tabindex="-1"><img src="Menu/menu-tarot-card-ai.webp" alt="" width="856" height="78" /></button>
+    </div>
+  </nav>
+  <section class="page" id="intro" aria-label="포트폴리오 오프닝">
+    <div class="intro-visual">
+      <video class="opening-video" src="Video/Opening_PingPong.mp4" poster="Video/Opening_Poster.jpg" width="1400" height="900" autoplay muted loop playsinline preload="auto" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1" aria-label="포트폴리오 오프닝"></video>
+      <canvas id="opening-neon" role="img" aria-label="마우스로 치면 튕기는 하늘색 네온"></canvas>
+    </div>
+  </section>
+  <section class="page" id="page-1" aria-label="포트폴리오 1">
+    <div class="chapter-visual"><img class="portfolio-image trim-right-edge" src="Source/1투명.webp" alt="윤원형 포트폴리오 1" width="5834" height="3750" loading="lazy" decoding="async" /></div>
+  </section>
+  <section class="page" id="page-2" aria-label="포트폴리오 2">
+    <div class="chapter-visual"><img class="portfolio-image trim-right-edge" src="Source/2.webp" alt="윤원형 포트폴리오 2" width="5834" height="3750" loading="lazy" decoding="async" /></div>
+  </section>
+  <section class="page" id="page-3" aria-label="포트폴리오 3">
+    <img class="portfolio-image" src="Source/3.webp" alt="윤원형 포트폴리오 3" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-4" aria-label="포트폴리오 4">
+    <video class="portfolio-image portfolio-loop-video" src="Video/All%20Space.mp4" poster="Video/All%20Space-poster.webp" width="1400" height="900" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1" aria-label="윤원형 포트폴리오 4"></video>
+  </section>
+  <section class="page" id="page-5" aria-label="포트폴리오 5">
+    <img class="portfolio-image trim-right-edge" src="Source/5.webp" alt="윤원형 포트폴리오 5" width="5834" height="750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="highlight" aria-label="전시 하이라이트 영상">
+    <video class="portfolio-video" width="3840" height="2160" controls muted loop playsinline preload="metadata" aria-label="전시 하이라이트">
+      <source src="Video/Highlight.mp4" type="video/mp4" />
+      영상을 재생할 수 없습니다. <a href="Video/Highlight.mp4">하이라이트 영상 내려받기</a>
+    </video>
+  </section>
+  <section class="page" id="page-7" aria-label="포트폴리오 7">
+    <img class="portfolio-image trim-right-edge" src="Source/7.webp" alt="윤원형 포트폴리오 7" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-8" aria-label="포트폴리오 8">
+    <img class="portfolio-image trim-right-edge" src="Source/8.webp" alt="윤원형 포트폴리오 8" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-9" aria-label="포트폴리오 9">
+    <div class="interaction-stage">
+      <img class="portfolio-image" src="Source/interaction animation page-09.webp" alt="Installation View: 전시 공간의 인터랙션 장면" width="5834" height="3750" loading="lazy" decoding="async" />
+      <div class="interaction-photo-pair" aria-hidden="true">
+        <img class="interaction-photo interaction-photo-first" src="Source/interaction-09-first.webp" alt="" width="3197" height="1249" loading="lazy" decoding="async" />
+        <img class="interaction-photo interaction-photo-second" src="Source/interaction-09-second.webp" alt="" width="2730" height="1108" loading="lazy" decoding="async" />
+      </div>
+    </div>
+  </section>
+  <section class="page" id="page-10" aria-label="포트폴리오 10">
+    <div class="interaction-stage">
+      <img class="portfolio-image" src="Source/interaction animation page-10.webp" alt="전시 공간의 인터랙션 장면" width="5834" height="3750" loading="lazy" decoding="async" />
+      <img class="interaction-photo interaction-photo-upper" src="Source/interaction-10-upper.webp" alt="" width="5834" height="2112" loading="lazy" decoding="async" />
+      <img class="interaction-photo interaction-photo-lower" src="Source/interaction-10-lower.webp" alt="" width="5834" height="1358" loading="lazy" decoding="async" />
+    </div>
+  </section>
+  <section class="page" id="page-11" aria-label="포트폴리오 11">
+    <div class="chapter-visual"><img class="portfolio-image trim-right-edge" src="Source/11.webp" alt="윤원형 포트폴리오 11" width="5834" height="3750" loading="lazy" decoding="async" /></div>
+  </section>
+  <section class="page" id="page-12" aria-label="포트폴리오 12">
+    <img class="portfolio-image" src="Source/12.webp" alt="윤원형 포트폴리오 12" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-13" aria-label="포트폴리오 13">
+    <img class="portfolio-image trim-right-edge" src="Source/13.webp" alt="윤원형 포트폴리오 13" width="5834" height="625" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-14" aria-label="포트폴리오 14">
+    <video class="portfolio-image portfolio-loop-video" src="Video/NoneAI.mp4" poster="Video/NoneAI-poster.webp" width="1600" height="686" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1" aria-label="윤원형 포트폴리오 14"></video>
+  </section>
+  <section class="page" id="page-15" aria-label="포트폴리오 15">
+    <img class="portfolio-image trim-right-edge" src="Source/15.webp" alt="윤원형 포트폴리오 15" width="5834" height="625" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-16" aria-label="포트폴리오 16">
+    <img class="portfolio-image trim-right-edge" src="Source/16.webp" alt="윤원형 포트폴리오 16" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-17" aria-label="포트폴리오 17">
+    <div class="chapter-visual"><img class="portfolio-image trim-right-edge" src="Source/17.webp" alt="윤원형 포트폴리오 17" width="5834" height="3750" loading="lazy" decoding="async" /></div>
+  </section>
+  <section class="page" id="page-18" aria-label="포트폴리오 18">
+    <img class="portfolio-image" src="Source/18.webp" alt="윤원형 포트폴리오 18" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-19" aria-label="포트폴리오 19">
+    <img class="portfolio-image trim-right-edge" src="Source/19.webp" alt="윤원형 포트폴리오 19" width="5834" height="625" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-20" aria-label="포트폴리오 20">
+    <video class="portfolio-image portfolio-loop-video" src="Video/UsingAI.mp4" poster="Video/UsingAI-poster.webp" width="1600" height="680" autoplay muted loop playsinline preload="metadata" disablepictureinpicture disableremoteplayback controlslist="nodownload nofullscreen noremoteplayback" tabindex="-1" aria-label="윤원형 포트폴리오 20"></video>
+  </section>
+  <section class="page" id="page-21" aria-label="포트폴리오 21">
+    <img class="portfolio-image trim-right-edge" src="Source/21.webp" alt="윤원형 포트폴리오 21" width="5834" height="625" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-22" aria-label="포트폴리오 22">
+    <img class="portfolio-image trim-right-edge" src="Source/22.webp" alt="윤원형 포트폴리오 22" width="5834" height="3750" loading="lazy" decoding="async" />
+  </section>
+  <section class="page" id="page-23" aria-label="포트폴리오 23">
+    <div class="chapter-visual"><img class="portfolio-image trim-right-edge" src="Source/23.webp" alt="윤원형 포트폴리오 23" width="5834" height="3750" loading="lazy" decoding="async" /></div>
+  </section>
+  <!-- 하단 임베드: 아래 embed-slot 안에 서비스에서 복사한 iframe 코드를 넣으세요. -->
+  <section class="page embed-area" id="embeds" aria-label="추가 콘텐츠">
+    <div class="embed-slot" id="embed-slot"><iframe src="https://online.fliphtml5.com/retxmon/true-final/" width="1400" height="900" title="윤원형 포트폴리오 플립북" frameborder="0" scrolling="no" allowfullscreen loading="lazy" style="aspect-ratio: 14 / 9; height: auto;"></iframe></div>
+  </section>
+  <script src="loop-videos.js" defer></script>
+  <script src="script.js?v=wheel-tail-250" defer></script>
+  <script src="opening-video.js" defer></script>
+  <script src="page1-objects.js?v=webp-assets" defer></script>
+  <script src="opening-neon.js?v=small-wall-only-30" defer></script>
+  <script src="meerkat-cursor.js?v=webp-assets" defer></script>
+  <script src="scroll-progress.js?v=progress-lag-250" defer></script>
+  <script src="menu.js?v=5" defer></script>
+  <script src="local-refraction.js?v=13-small-media-refraction" defer></script>
+</body>
+</html>
