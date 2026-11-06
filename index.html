@@ -58,7 +58,7 @@
     </section>
 
     <section class="about-section" id="about" aria-labelledby="about-title">
-      <div class="shell about-layout">
+      <div class="shell about-layout about-layout--semantic">
         <header class="about-profile" data-reveal>
           <h2 id="about-title">Yun Won Hyeong</h2>
           <time datetime="2002-04-17">2002.04.17.</time>
@@ -90,18 +90,21 @@
         <div class="about-bottom">
           <section class="about-block about-skills" data-reveal>
             <h3>Skill</h3>
-            <svg class="about-skills__icons" viewBox="140 2310 760 830" role="img" aria-label="사용 프로그램 아이콘">
-              <image href="Source/1투명.webp" width="5834" height="3750" />
+            <svg class="about-skills__icons" viewBox="70 1140 380 370" role="img" aria-label="사용 프로그램 아이콘">
+              <image href="Source/1투명.webp" width="2880" height="1851" />
             </svg>
           </section>
         </div>
       </div>
-      <div class="about-decorations" aria-hidden="true">
-        <svg class="about-decoration about-decoration--leaf" viewBox="4100 1060 520 420"><image href="Source/1.webp" width="5834" height="3750" /></svg>
-        <svg class="about-decoration about-decoration--chair" viewBox="4380 760 650 520"><image href="Source/1.webp" width="5834" height="3750" /></svg>
-        <svg class="about-decoration about-decoration--circle" viewBox="4760 1050 620 560"><image href="Source/1.webp" width="5834" height="3750" /></svg>
-        <svg class="about-decoration about-decoration--bird" viewBox="3940 1630 620 560"><image href="Source/1.webp" width="5834" height="3750" /></svg>
-      </div>
+      <svg class="about-source-art" viewBox="0 0 2880 1851" aria-hidden="true">
+        <defs>
+          <clipPath id="about-source-clip">
+            <rect x="0" y="0" width="2200" height="1000" />
+            <rect x="0" y="1000" width="650" height="550" />
+          </clipPath>
+        </defs>
+        <image href="Source/1투명.webp" width="2880" height="1851" clip-path="url(#about-source-clip)" />
+      </svg>
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
