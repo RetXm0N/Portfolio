@@ -110,15 +110,10 @@ button, input, textarea, select { font: inherit; }
 .about-list li { display: grid; grid-template-columns: min(138px, 5.4vw) minmax(0, 1fr); gap: min(14px, 0.55vw); color: rgba(255, 255, 255, 0.7); font-size: clamp(0.68rem, 0.85vw, 1.36rem); font-weight: 300; line-height: 1.45; }
 .about-list strong { color: rgba(255, 255, 255, 0.82); font-weight: 650; white-space: nowrap; }
 .about-skills__icons { display: block; width: min(220px, 8.6vw); height: auto; overflow: hidden; }
-.contact-section { position: relative; min-height: 100vh; min-height: 100svh; display: grid; align-items: center; padding-block: clamp(88px, 10vh, 140px); background: #030303; color: var(--about-text); font-family: var(--about-font); }
-.contact-shell { width: min(1800px, calc(100vw - clamp(72px, 12vw, 260px))); margin-inline: auto; }
-.contact-kicker { margin: 0 0 clamp(28px, 4vh, 52px); color: var(--about-text); font-family: var(--about-font); font-size: clamp(1rem, 1.2vw, 1.35rem); font-weight: 400; letter-spacing: 0; text-transform: uppercase; }
-.contact-section h2 { max-width: 1200px; margin: 0; color: var(--about-text); font-family: var(--about-font); font-size: clamp(3.6rem, 8vw, 9.5rem); font-weight: 600; line-height: 0.96; letter-spacing: -0.035em; word-break: keep-all; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 18px clamp(42px, 6vw, 96px); margin-top: clamp(64px, 10vh, 126px); }
-.contact-links a { color: var(--about-text); font-family: var(--about-font); font-size: clamp(1.05rem, 1.5vw, 1.65rem); font-weight: 400; text-decoration: none; text-underline-offset: 7px; }
-.contact-links a:hover, .contact-links a:focus-visible { color: var(--about-text); text-decoration: underline; }
+.about-contact-list { display: grid; gap: 18px; padding: 0; margin: 0; list-style: none; }
+.about-contact-list a { color: rgba(255, 255, 255, 0.7); text-decoration: none; }
+.about-contact-list a:hover, .about-contact-list a:focus-visible { color: rgba(255, 255, 255, 0.9); text-decoration: underline; text-underline-offset: 5px; }
 .site-footer { display: flex; justify-content: space-between; gap: 24px; padding-block: 28px; color: var(--about-text); font-family: var(--about-font); font-size: 0.78rem; }
-.contact-section .site-footer { position: absolute; right: 0; bottom: 0; left: 0; }
 .site-footer p { margin: 0; }
 .site-footer a { text-underline-offset: 4px; }
 
@@ -184,7 +179,6 @@ button, input, textarea, select { font: inherit; }
   .about-facts { margin-top: 78px; }
   .about-bottom { margin-top: 96px; }
   .about-skills__icons { width: min(100%, 245px); }
-  .contact-shell { width: var(--shell); }
   .project-hero__topline { margin-bottom: 48px; }
   .project-hero__lead { margin-left: 0; }
   .media-grid { grid-template-columns: 1fr; }
@@ -207,8 +201,6 @@ button, input, textarea, select { font: inherit; }
   .about-list li { grid-template-columns: 104px minmax(0, 1fr); gap: 12px; }
   .meta-list li { grid-template-columns: 1fr; gap: 4px; }
   .project-card__body { padding: 20px 22px 24px; }
-  .contact-section h2 { font-size: clamp(3rem, 15vw, 5.2rem); }
-  .contact-links { flex-direction: column; margin-top: 64px; }
   .project-hero__topline { flex-direction: column; gap: 6px; }
   .project-cover { width: 100%; border-radius: 0; border-right: 0; border-left: 0; }
 }
