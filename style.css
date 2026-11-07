@@ -153,10 +153,10 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
 .tuk-project-page .tuk-overview-screen .tuk-overview-kicker span { display: block; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines { margin: 0; color: var(--about-text); font-family: var(--about-font); font-size: clamp(0.7rem, 0.9vw, 1rem); font-weight: 300; line-height: 1.9; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines span { display: block; white-space: nowrap; }
-.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; gap: 8px; width: clamp(190px, 17vw, 260px); transform: translateY(-50%); }
+.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; gap: 0; width: clamp(190px, 17vw, 260px); transform: translateY(-50%); }
 .tuk-project-page .tuk-skill-strip { display: block; width: 100%; aspect-ratio: 480 / 170; background-color: var(--bg); background-image: url("Source/2.webp"); background-repeat: no-repeat; background-size: 600% auto; background-blend-mode: screen; }
 .tuk-project-page .tuk-skill-strip--first { background-position: 40.417% 73.17%; }
-.tuk-project-page .tuk-skill-strip--second { background-position: 59.583% 73.17%; }
+.tuk-project-page .tuk-skill-strip--second { margin-top: -11.67%; background-position: 59.583% 73.17%; }
 .tuk-project-page .tuk-media-screen { padding-block: clamp(36px, 5vh, 56px); }
 .tuk-project-page .tuk-media-screen > .shell,
 .tuk-project-page .tuk-installation-screen { display: grid; grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1.58fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
