@@ -96,6 +96,11 @@ button, input, textarea, select { font: inherit; }
 .about-section { position: relative; min-height: 100vh; min-height: 100svh; padding: 0; overflow: hidden; background: #000; }
 .about-layout.about-layout--semantic { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .about-source-art { position: absolute; top: 4.15vh; left: 50%; display: block; width: min(1920px, 75vw); height: auto; transform: translateX(-50%); }
+.about-contact-hotspots { position: absolute; top: 4.15vh; left: 50%; z-index: 3; width: min(1920px, 75vw); aspect-ratio: 2880 / 1851; transform: translateX(-50%); pointer-events: none; }
+.about-contact-hotspot { position: absolute; display: block; pointer-events: auto; cursor: pointer; }
+.about-contact-hotspot--phone { top: 62.1%; left: 24.9%; width: 15.2%; height: 5%; }
+.about-contact-hotspot--email { top: 66.3%; left: 24.9%; width: 15.5%; height: 5.2%; }
+.about-contact-hotspot:focus-visible { outline: 1px solid rgba(203, 203, 203, 0.85); outline-offset: 3px; }
 .about-layout { position: relative; z-index: 2; display: grid; width: min(1800px, 70.5vw); margin-inline: auto; }
 .about-profile { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; width: min(650px, 36.12%); padding-bottom: 2px; border-bottom: 1px solid rgba(255, 255, 255, 0.68); }
 .about-profile h2 { margin: 0; font-size: clamp(1.45rem, 1.9vw, 3rem); font-weight: 620; line-height: 0.9; letter-spacing: -0.04em; white-space: nowrap; }
@@ -172,6 +177,7 @@ button, input, textarea, select { font: inherit; }
   .about-section { min-height: 100svh; height: auto; overflow: visible; }
   .about-layout.about-layout--semantic { position: relative; width: var(--shell); height: auto; padding: 0; margin-inline: auto; overflow: visible; clip: auto; white-space: normal; }
   .about-source-art { display: none; }
+  .about-contact-hotspots { display: none; }
   .about-layout { width: var(--shell); }
   .about-statement__break { display: none; }
   .about-profile { width: 100%; }
