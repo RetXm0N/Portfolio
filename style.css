@@ -153,7 +153,7 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
 .tuk-project-page .tuk-overview-screen .tuk-overview-kicker span { display: block; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines { margin: 0; color: var(--about-text); font-family: var(--about-font); font-size: clamp(0.7rem, 0.9vw, 1rem); font-weight: 300; line-height: 1.9; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines span { display: block; white-space: nowrap; }
-.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.75%; width: min(220px, 8.6vw); transform: translateY(-50%); }
+.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.75%; width: min(220px, 8.6vw); transform: translate(-50%, -50%); }
 .tuk-project-page .tuk-skill-cell { display: block; width: 100%; aspect-ratio: 1; background-image: url("Source/1투명.webp"); background-repeat: no-repeat; background-size: 3840% 2468%; }
 .tuk-project-page .tuk-skill-cell:nth-child(1) { background-position: 9.5900% 69.7635%; }
 .tuk-project-page .tuk-skill-cell:nth-child(2) { background-position: 6.5241% 69.7635%; }
@@ -247,7 +247,7 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
   .tuk-project-page .tuk-media-screen .section-heading h2 { font-size: clamp(1.75rem, 8vw, 2.8rem); }
   .tuk-project-page .tuk-media-screen .media-stack { height: 100%; }
   .tuk-project-page .tuk-overview-screen .project-overview__copy { width: 100%; }
-  .tuk-project-page .tuk-overview-skills { position: relative; top: auto; right: auto; width: min(100%, 240px); margin-top: 28px; transform: none; }
+  .tuk-project-page .tuk-overview-skills { position: relative; top: auto; right: auto; left: auto !important; width: min(100%, 240px); margin-top: 28px; transform: none; }
   .tuk-project-page .tuk-overview-screen .tuk-overview-lines span { display: inline; white-space: normal; }
   .tuk-project-page .tuk-overview-screen .tuk-overview-lines span::after { content: " "; }
 }
