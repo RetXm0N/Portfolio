@@ -153,10 +153,16 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
 .tuk-project-page .tuk-overview-screen .tuk-overview-kicker span { display: block; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines { margin: 0; color: var(--about-text); font-family: var(--about-font); font-size: clamp(0.7rem, 0.9vw, 1rem); font-weight: 300; line-height: 1.9; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines span { display: block; white-space: nowrap; }
-.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; gap: 0; width: clamp(190px, 16.6667vw, 480px); transform: translateY(-50%); }
-.tuk-project-page .tuk-skill-strip { display: block; width: 100%; aspect-ratio: 480 / 170; background-color: var(--bg); background-image: url("Source/2.webp"); background-repeat: no-repeat; background-size: 600% auto; background-blend-mode: screen; }
-.tuk-project-page .tuk-skill-strip--first { background-position: 40.417% 73.17%; }
-.tuk-project-page .tuk-skill-strip--second { margin-top: -11.67%; background-position: 59.583% 73.17%; }
+.tuk-project-page .tuk-overview-skills { position: absolute; top: 50%; right: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.75%; width: min(220px, 8.6vw); transform: translateY(-50%); }
+.tuk-project-page .tuk-skill-cell { display: block; width: 100%; aspect-ratio: 1; background-image: url("Source/1투명.webp"); background-repeat: no-repeat; background-size: 3840% 2468%; }
+.tuk-project-page .tuk-skill-cell:nth-child(1) { background-position: 9.5900% 69.7635%; }
+.tuk-project-page .tuk-skill-cell:nth-child(2) { background-position: 6.5241% 69.7635%; }
+.tuk-project-page .tuk-skill-cell:nth-child(3) { background-position: 12.5490% 69.7635%; }
+.tuk-project-page .tuk-skill-cell:nth-child(4) { background-position: 9.5900% 74.4369%; }
+.tuk-project-page .tuk-skill-cell:nth-child(5) { background-position: 3.5294% 69.7635%; }
+.tuk-project-page .tuk-skill-cell:nth-child(6) { background-position: 3.5294% 65.0901%; }
+.tuk-project-page .tuk-skill-cell:nth-child(7) { background-position: 9.5900% 65.0901%; }
+.tuk-project-page .tuk-skill-cell:nth-child(8) { background-position: 12.5490% 74.4369%; }
 .tuk-project-page .tuk-media-screen { padding-block: clamp(36px, 5vh, 56px); }
 .tuk-project-page .tuk-media-screen > .shell,
 .tuk-project-page .tuk-installation-screen { display: grid; grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1.58fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
