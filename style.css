@@ -46,7 +46,7 @@ button, input, textarea, select { font: inherit; }
 .brand span { font-size: 0.88rem; font-weight: 750; }
 .brand small { color: var(--muted); font-size: 0.65rem; }
 .project-header { justify-content: flex-start; }
-.project-home-link { color: rgba(255, 255, 255, 0.82); font-size: 0.88rem; font-weight: 650; letter-spacing: 0.02em; }
+.project-home-link { color: rgba(255, 255, 255, 0.82); font-size: clamp(1.1rem, 1.15vw, 1.4rem); font-weight: 650; letter-spacing: 0.02em; }
 .primary-nav { display: flex; gap: clamp(15px, 1.125vw, 26px); background: transparent; }
 .primary-nav a { position: relative; color: rgba(255, 255, 255, 0.82); font-size: clamp(1.1rem, 1.15vw, 1.4rem); font-weight: 500; text-decoration: none; background: transparent; }
 .primary-nav a::after { content: ""; position: absolute; right: 0; bottom: -6px; left: 0; height: 1px; transform: scaleX(0); transform-origin: right; background: var(--cyan); transition: transform 220ms ease; }
@@ -137,7 +137,7 @@ button, input, textarea, select { font: inherit; }
 body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); background: transparent; border-color: transparent; backdrop-filter: none; }
 .project-hero--tuk { position: relative; min-height: calc(100vh - var(--header-height)); min-height: calc(100svh - var(--header-height)); display: flex; flex-direction: column; justify-content: center; width: 100%; padding: clamp(64px, 9vh, 104px) var(--tuk-gutter); margin: 0; }
 .project-hero--tuk::before { content: ""; position: absolute; inset: calc(-1 * var(--header-height)) 0 0; z-index: 0; background: linear-gradient(90deg, rgba(3, 5, 9, 0.62), rgba(3, 5, 9, 0.18)), linear-gradient(rgba(3, 5, 9, 0.2), rgba(3, 5, 9, 0.34)), url("Source/3.webp") center / cover no-repeat; }
-.project-hero--tuk h1 { position: relative; z-index: 1; max-width: none; color: var(--about-text); font-family: var(--about-font); font-size: clamp(2.1rem, 4.5vw, 4.7rem); font-weight: 400; line-height: 0.92; white-space: nowrap; }
+.project-hero--tuk h1 { position: relative; z-index: 1; max-width: none; color: var(--about-text); font-family: var(--about-font); font-size: clamp(2.1rem, 4.5vw, 4.7rem); font-weight: 650; line-height: 0.92; white-space: nowrap; }
 .tuk-transition-entry .project-hero--tuk h1 { animation: tuk-title-reveal 900ms 180ms cubic-bezier(.22, 1, .36, 1) both; }
 .project-transition-overlay { position: fixed; z-index: 2147483647; overflow: hidden; pointer-events: none; background: #030509; will-change: top, left, width, height, border-radius; }
 .project-transition-overlay img { width: 100%; height: 100%; object-fit: cover; }
@@ -198,6 +198,7 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
   .nav-toggle { display: block; }
   .primary-nav { position: fixed; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 14px; visibility: hidden; opacity: 0; background: rgba(7, 9, 12, 0.98); transition: opacity 220ms ease, visibility 220ms ease; }
   .primary-nav a { font-size: 1.7rem; }
+  .project-home-link { font-size: 1.7rem; }
   .nav-open .primary-nav { visibility: visible; opacity: 1; }
   .home-hero__content { padding-bottom: 72px; }
   .home-hero h1 { font-size: clamp(3.8rem, 18vw, 7rem); }
