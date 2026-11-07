@@ -133,10 +133,12 @@ button, input, textarea, select { font: inherit; }
 .project-hero__topline { display: flex; justify-content: space-between; gap: 24px; margin-bottom: 72px; color: var(--muted); font-size: 0.76rem; }
 .project-hero h1 { max-width: 1050px; font-size: clamp(3.7rem, 11vw, 9.4rem); }
 .project-hero__lead { max-width: 760px; margin: 44px 0 0 auto; font-size: clamp(1.15rem, 2.2vw, 1.55rem); }
-.tuk-project-page { --tuk-gutter: clamp(32px, 4vw, 72px); }
+.tuk-project-page { --tuk-gutter: clamp(32px, 4vw, 72px); position: relative; background: var(--bg); }
 body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); background: transparent; border-color: transparent; backdrop-filter: none; }
+.tuk-project-page .project-main { position: relative; z-index: 1; }
+.tuk-fixed-backdrop { position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: var(--tuk-backdrop-opacity, 1); background: linear-gradient(90deg, rgba(3, 5, 9, 0.62), rgba(3, 5, 9, 0.18)), linear-gradient(rgba(3, 5, 9, 0.2), rgba(3, 5, 9, 0.34)), url("Source/3.webp") center / cover no-repeat; filter: blur(var(--tuk-backdrop-blur, 0px)); transform: scale(1.015); transform-origin: center; will-change: filter, opacity; }
 .project-hero--tuk { position: relative; min-height: calc(100vh - var(--header-height)); min-height: calc(100svh - var(--header-height)); display: flex; flex-direction: column; justify-content: center; width: 100%; padding: clamp(64px, 9vh, 104px) var(--tuk-gutter); margin: 0; }
-.project-hero--tuk::before { content: ""; position: absolute; inset: calc(-1 * var(--header-height)) 0 0; z-index: 0; background: linear-gradient(90deg, rgba(3, 5, 9, 0.62), rgba(3, 5, 9, 0.18)), linear-gradient(rgba(3, 5, 9, 0.2), rgba(3, 5, 9, 0.34)), url("Source/3.webp") center / cover no-repeat; }
+.project-hero--tuk::before { content: ""; position: absolute; inset: calc(-1 * var(--header-height)) 0 0; z-index: 0; background: linear-gradient(90deg, rgba(3, 5, 9, 0.12), transparent 52%), linear-gradient(transparent, rgba(3, 5, 9, 0.1)); }
 .project-hero--tuk h1 { position: relative; z-index: 1; max-width: none; color: var(--about-text); font-family: var(--about-font); font-size: clamp(2.1rem, 4.5vw, 4.7rem); font-weight: 650; line-height: 0.92; white-space: nowrap; }
 .tuk-transition-entry .project-hero--tuk h1 { animation: tuk-title-reveal 900ms 180ms cubic-bezier(.22, 1, .36, 1) both; }
 .project-transition-overlay { position: fixed; z-index: 2147483647; overflow: hidden; pointer-events: none; background: #030509; will-change: top, left, width, height, border-radius; }
