@@ -100,6 +100,8 @@ button, input, textarea, select { font: inherit; }
 .about-contact-hotspot { position: absolute; display: block; pointer-events: auto; cursor: pointer; }
 .about-contact-hotspot--phone { top: 62.1%; left: 24.9%; width: 15.2%; height: 5%; }
 .about-contact-hotspot--email { top: 66.3%; left: 24.9%; width: 15.5%; height: 5.2%; }
+.about-contact-hotspot::after { content: ""; position: absolute; top: 70%; right: 3%; left: 22%; height: 0.5px; background: rgba(203, 203, 203, 0.78); }
+.about-contact-hotspot--email::after { top: 60%; }
 .about-contact-hotspot:focus-visible { outline: 1px solid rgba(203, 203, 203, 0.85); outline-offset: 3px; }
 .about-layout { position: relative; z-index: 2; display: grid; width: min(1800px, 70.5vw); margin-inline: auto; }
 .about-profile { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; width: min(650px, 36.12%); padding-bottom: 2px; border-bottom: 1px solid rgba(255, 255, 255, 0.68); }
@@ -116,8 +118,8 @@ button, input, textarea, select { font: inherit; }
 .about-list strong { color: rgba(255, 255, 255, 0.82); font-weight: 650; white-space: nowrap; }
 .about-skills__icons { display: block; width: min(220px, 8.6vw); height: auto; overflow: hidden; }
 .about-contact-list { display: grid; gap: 18px; padding: 0; margin: 0; list-style: none; }
-.about-contact-list a { color: rgba(255, 255, 255, 0.7); text-decoration: none; }
-.about-contact-list a:hover, .about-contact-list a:focus-visible { color: rgba(255, 255, 255, 0.9); text-decoration: underline; text-underline-offset: 5px; }
+.about-contact-list a { color: rgba(255, 255, 255, 0.7); text-decoration: underline; text-decoration-thickness: 0.5px; text-underline-offset: 4px; }
+.about-contact-list a:hover, .about-contact-list a:focus-visible { color: rgba(255, 255, 255, 0.9); }
 .site-footer { display: flex; justify-content: space-between; gap: 24px; padding-block: 28px; color: var(--about-text); font-family: var(--about-font); font-size: 0.78rem; }
 .site-footer p { margin: 0; }
 .site-footer a { text-underline-offset: 4px; }
