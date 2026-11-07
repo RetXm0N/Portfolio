@@ -137,7 +137,14 @@ button, input, textarea, select { font: inherit; }
 body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); background: transparent; border-color: transparent; backdrop-filter: none; }
 .project-hero--tuk { position: relative; min-height: calc(100vh - var(--header-height)); min-height: calc(100svh - var(--header-height)); display: flex; flex-direction: column; justify-content: center; width: 100%; padding: clamp(64px, 9vh, 104px) var(--tuk-gutter); margin: 0; }
 .project-hero--tuk::before { content: ""; position: absolute; inset: calc(-1 * var(--header-height)) 0 0; z-index: 0; background: linear-gradient(90deg, rgba(3, 5, 9, 0.62), rgba(3, 5, 9, 0.18)), linear-gradient(rgba(3, 5, 9, 0.2), rgba(3, 5, 9, 0.34)), url("Source/3.webp") center / cover no-repeat; }
-.project-hero--tuk h1 { position: relative; z-index: 1; max-width: none; font-size: clamp(2.1rem, 4.5vw, 4.7rem); line-height: 0.92; white-space: nowrap; }
+.project-hero--tuk h1 { position: relative; z-index: 1; max-width: none; color: var(--about-text); font-family: var(--about-font); font-size: clamp(2.1rem, 4.5vw, 4.7rem); font-weight: 400; line-height: 0.92; white-space: nowrap; }
+.tuk-transition-entry .project-hero--tuk h1 { animation: tuk-title-reveal 900ms 180ms cubic-bezier(.22, 1, .36, 1) both; }
+.project-transition-overlay { position: fixed; z-index: 2147483647; overflow: hidden; pointer-events: none; background: #030509; will-change: top, left, width, height, border-radius; }
+.project-transition-overlay img { width: 100%; height: 100%; object-fit: cover; }
+.project-transition-overlay::after { content: ""; position: absolute; inset: 0; opacity: 0; background: linear-gradient(90deg, rgba(3, 5, 9, 0.62), rgba(3, 5, 9, 0.18)), linear-gradient(rgba(3, 5, 9, 0.2), rgba(3, 5, 9, 0.34)); animation: project-transition-shade 900ms cubic-bezier(.22, 1, .36, 1) forwards; }
+.project-transitioning { overflow: hidden; }
+@keyframes project-transition-shade { to { opacity: 1; } }
+@keyframes tuk-title-reveal { from { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateX(-20px); } to { opacity: 1; clip-path: inset(0); transform: translateX(0); } }
 .tuk-project-page .tuk-screen { height: 100vh; height: 100svh; overflow: hidden; }
 .tuk-project-page .tuk-cover-screen { width: 100%; display: grid; place-items: center; padding: clamp(40px, 6vh, 72px) max(32px, calc((100vw - 1180px) / 2)); border: 0; border-radius: 0; }
 .tuk-project-page .tuk-cover-screen img { width: auto; max-width: 100%; height: auto; max-height: 100%; object-fit: contain; border: 1px solid var(--line); border-radius: var(--radius); }
@@ -249,4 +256,5 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
+  .tuk-transition-entry .project-hero--tuk h1 { animation: none; }
 }
