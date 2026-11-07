@@ -149,6 +149,8 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
 .tuk-project-page .tuk-overview-screen { display: grid; align-items: center; width: 100%; padding: clamp(48px, 7vh, 80px) var(--tuk-gutter); }
 .tuk-project-page .tuk-overview-screen .project-overview { display: block; width: 100%; max-width: none; }
 .tuk-project-page .tuk-overview-screen .project-overview__copy { width: 100%; }
+.tuk-project-page .tuk-overview-screen .tuk-overview-kicker { display: grid; gap: 2px; margin: 0 0 clamp(36px, 5vh, 54px); color: var(--about-text); font-family: var(--about-font); font-size: clamp(0.72rem, 1.05vw, 0.95rem); font-weight: 300; line-height: 1.35; }
+.tuk-project-page .tuk-overview-screen .tuk-overview-kicker span { display: block; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines { margin: 0; color: var(--about-text); font-family: var(--about-font); font-size: clamp(0.8rem, 1.25vw, 1.1rem); font-weight: 300; line-height: 1.9; }
 .tuk-project-page .tuk-overview-screen .tuk-overview-lines span { display: block; white-space: nowrap; }
 .tuk-project-page .tuk-media-screen { padding-block: clamp(36px, 5vh, 56px); }
