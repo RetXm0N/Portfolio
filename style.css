@@ -146,9 +146,8 @@ body.tuk-project-page .project-header { padding-inline: var(--tuk-gutter); backg
 @keyframes project-transition-shade { to { opacity: 1; } }
 @keyframes tuk-title-reveal { from { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateX(-20px); } to { opacity: 1; clip-path: inset(0); transform: translateX(0); } }
 .tuk-project-page .tuk-screen { height: 100vh; height: 100svh; overflow: hidden; }
-.tuk-project-page .tuk-cover-screen { width: 100%; display: grid; place-items: center; padding: clamp(40px, 6vh, 72px) max(32px, calc((100vw - 1180px) / 2)); border: 0; border-radius: 0; }
-.tuk-project-page .tuk-cover-screen img { width: auto; max-width: 100%; height: auto; max-height: 100%; object-fit: contain; border: 1px solid var(--line); border-radius: var(--radius); }
-.tuk-project-page .tuk-overview-screen { display: grid; align-items: center; padding-block: clamp(48px, 7vh, 80px); }
+.tuk-project-page .tuk-overview-screen { display: grid; align-items: center; width: 100%; padding: clamp(48px, 7vh, 80px) var(--tuk-gutter); }
+.tuk-project-page .tuk-overview-screen .project-overview { width: 100%; max-width: 1800px; }
 .tuk-project-page .tuk-media-screen { padding-block: clamp(36px, 5vh, 56px); }
 .tuk-project-page .tuk-media-screen > .shell,
 .tuk-project-page .tuk-installation-screen { display: grid; grid-template-columns: minmax(240px, 0.42fr) minmax(0, 1.58fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
